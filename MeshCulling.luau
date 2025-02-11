@@ -9,7 +9,7 @@ local SUBJECT_REFERENCE: MeshPart = workspace:WaitForChild("building")
 local vertexCache = {}
 local faceTable = {}
 
-local em = AssetService:CreateEditableMeshAsync(Content.fromUri(workspace:WaitForChild('building').MeshId), {
+local em = AssetService:CreateEditableMeshAsync(Content.fromUri(SUBJECT_REFERENCE.MeshId), {
 	FixedSize = false
 })
 em:RemoveUnused()
