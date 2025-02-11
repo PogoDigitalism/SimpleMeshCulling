@@ -41,8 +41,7 @@ RunService.RenderStepped:Connect(function(_)
 			vertexCache[face] = oldVertices
 
 		elseif faceInRadius and not actualFace then
-			local av1, av2, av3
-			av1, av2, av3 = vertexCache[face][1], vertexCache[face][2], vertexCache[face][3]
+			local av1, av2, av3 = vertexCache[face][1], vertexCache[face][2], vertexCache[face][3]
 			faceTable[face] = actualEm:AddTriangle(av1, av2, av3)
 		end
 	end
