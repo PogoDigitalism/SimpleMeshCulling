@@ -23,7 +23,7 @@ RunService.RenderStepped:Connect(function(_)
 
 		local faceInRadius = true
 		for _, vertex in faceVertices do
-			local posi =  em:GetPosition(vertex)
+			local posi = em:GetPosition(vertex)
 			
 			local worldSpace = SUBJECT_REFERENCE.Position + Vector3.new(posi.X*-1, posi.Y, posi.Z*-1)
 			if (origin - worldSpace).Magnitude > RADIUS then
